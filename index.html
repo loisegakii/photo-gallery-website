@@ -6,6 +6,10 @@
     <title>My photo Gallery</title>
 
     <style>
+        body { /*Styles that will appear throught the body*/
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
         footer {
             text-align: center;
             background-color: #f1f1f1;
@@ -15,62 +19,75 @@
             width: 100%;
             border-top: 1px solid #ccc;
         }
+        /* Styling the top navigation bar */
+        .topnav {
+  overflow: hidden;
+  background-color: #000000; /*Changing the background color of the top navbar*/
+  position: fixed;
+}
+.topnav a { /*Stling the links*/
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover { /*Adding the hover effect*/
+  background-color: #ddd;
+  color: black;
+}
+/*Activating the home button*/
+.topnav a.active {
+  background-color: #78aa04;
+  color: white;
+}
     </style>
 </head>
 <body>
-   
+   <!-- Navigation bar -->
+    <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#nature">Nature</a>
+    <a href="#travel">Travel</a>
+    <a href="#events">Events</a>
+    <a href="#favourites">Favourites</a>
+    </div>
+    <div style="padding-left: 16px;"></div>
+
     <!-- Introduction page -->
      <section id="home">
-        <img src="images/wp9218817-3420903641.jpg" alt="Hero Image" style="width: 100%;">
-        <div style="position: absolute; top: 5%; left: 10%; transform: translate(80%, 10%); color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5); padding: 10px; font-size:30px"> <h1>Welcome to My Photo Album</h1> </div>
+        <img src="images/background.jpg" alt="Hero Image" style="width: 100%;">
+        <div style="position: absolute; top: 10%; left: -10%; transform: translate(80%, 10%); color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5); padding: 25px; font-size:30px"> <h1>Welcome to My Photo Album</h1> </div>
     </section>
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.2); padding: 10px;width:1400px">
-          <p style="font-size: 200%;"> Welcome to <strong>My Photo Gallery</strong>, a visual storytelling haven where every frame captures a moment, a mood, and a memory. Whether it’s breathtaking landscapes, 
+        <div style="position: absolute; top: 50%; left: 40%; transform: translate(-30%, -30%); color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.2); padding: 5px; width:600px">
+          <p style="font-size: 150%;"> Welcome to <strong>My Photo Gallery</strong>, a visual storytelling haven where every frame captures a moment, a mood, and a memory. Whether it’s breathtaking landscapes, 
             intimate portraits, or dynamic street photography, our collection is a tribute to the art of seeing. With a keen eye for detail 
             and a passion for authentic expression, we transform ordinary scenes into extraordinary narratives. 
             Explore our curated galleriess, discover the beauty in everyday life, and let the world unfold through the lens.</p>
-            
-            <p style="position:absolute; top:-70%; left:-14%;font-size:30px;color:white"><b><i><u>Home</u></i></b></p>
-            <a href="#nature"><p style="position:absolute; top:0%; left:-14%;font-size:30px;color:white">Nature</p></a>
-            <a href="#travel"><p style="position:absolute; top:20%; left:-14%;font-size:30px;color:white"> Travel</p></a>
-            <a href="#events"><p style="position:absolute; top:40%; left:-14%;font-size:30px;color:white">Events</p></a>
-            <a href="favourites.html"><p style="position:absolute; top:60%; left:-14%;font-size:30px;color:white">Favourites</p></a>
         </div>
-        
-        <footer>
-            <p>&copy; Photo Gallery Website 2025. All rights reserved</p> |<a href="#home">Home</a> 
-        </footer>
-    </div>
+         
     
     <!-- Nature section -->
+<div>
     <section id="nature">
-        <img src="images/432831-1138142550.jpg"width="120%">
-        <div style="position: absolute; top: 140%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;font-size:20px"><h2>Through the Lens of Nature: Capturing Earth's Untamed Beauty</h2>
-    </section>
-        <div style="position: absolute; top: 190%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
-        <p style="font-size: 200%; color:rgb(255, 255, 255);">The beauty and diversity of the natural world are captured in the compelling art form of nature photography. 
+        <img src="images/background.jpg"width="200%">
+        <div style="position: absolute; top: 145%; left: 60%; transform: translate(-60%, -30%); color: white; background-color: rgba(0, 0, 0, 0.5); padding:30px;font-size:20px"><h2>Through the Lens of Nature: Capturing Earth's Untamed Beauty</h2>
+        <div style="position: absolute; top: 190%; left: 50%; transform: translate(-35%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
+        <!-- <p style="font-size: 100%; color:rgb(255, 255, 255);">The beauty and diversity of the natural world are captured in the compelling art form of nature photography. 
         It celebrates the fine details and expansive vistas that make nature breathtaking, encompassing landscapes, wildlife, plants, and other outdoor components. 
-        Patience, an acute sense of composition, and frequently a strong bond with the natural world are necessary for this genre.
-        Through images of tiny dewdrops on a flower petal or breathtaking mountain ranges, nature photography encourages viewers to take in the beauties of the planet and cultivates a feeling of environmental care.
- 
-        
-        </p>
-        <p style="position:absolute; top:-15%; left:-14%;font-size:30px;color:white"><i><b><u>Nature</u></b></i></p>
-        <a href="#home"><p style="position:absolute; top:10%; left:-14%;font-size:30px;color:white"> Home</p></a>
-        <a href="#travel"><p style="position:absolute; top:20%; left:-14%;font-size:30px;color:white"> Travel</p></a>
-        <a href="#events"><p style="position:absolute; top:30%; left:-14%;font-size:30px;color:white">Events</p></a>
-        <a href="favourites.html"><p style="position:absolute; top:40%; left:-14%;font-size:30px;color:white">Favourites</p></a>
-    <table border="0">
+        Patience, an acute sense of composition</p> -->
+    <table>
         <tr>
-            <td><img src="images/Northern-Lights-HD-Images.jpg" width="500">
+            <td><img src="images/Northern-Lights-HD-Images.jpg" width="300" height="300">
             <a href ="http://www.pixelstalk.net/wp-content/uploads/2016/06/Northern-Lights-HD-Images.jpg">
                 <p style = "color:white; font-size:20px;"> Northern Lights</p>
             </a>
             </td>
-            <td><img src="images/nature-photography-3162830057.jpg" width="500">
+            <td><img src="images/nature-photography-3162830057.jpg" width="300" height="300">
             <a href="https://shotkit.com/wp-content/uploads/2021/01/nature-photography.jpg"><p style = "color:white; font-size:20px;">A squirrel sitting on a tree stamp</p></a>
             </td>
-            <td><img src ="images/7t87-3943284602.jpeg" width = 450>
+            <td><img src ="images/7t87-3943284602.jpeg" width="300" height="300">
             <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.APbOO-ilJ6iQzFJUZ4kH-gHaEo%26pid%3DApi&f=1&ipt=5b4257b44560ff1b340d5624284b6d8a3e50ac0c53a7d7627ce977b773ccea96&ipo=images">
                 <p style = "color:white; font-size:20px;">A lonely road in a forest</p>
             </a>
@@ -78,39 +95,37 @@
         </tr>
     </table>
     </div>
-    <footer>
-        <p>&copy; Photo Gallery Website 2025. All rights reserved</p> |<a href="#home">Home</a> 
-    </footer>
-    </div>
+</section>
+</div>
+<footer></footer>
     <!-- Travel section -->
+<div>
     <section id="travel">
-        <img src="images/1c177e01c393616def0be737c25818c2a1e5bc57_2_1024x576-2082975479.jpeg" width="100%">
-        <div style="position: absolute; top: 290%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+        <img src="images/background.jpg" width="100%">
+        <div style="position: absolute; top: 300%; left: 50%; transform: translate(-60%, -30%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
             <h2 style="font-size:200%;">Wanderlust in Focus: Exploring the World One Shot at a Time</h2></div>
-            
-            <div style="position: absolute; top: 340%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
-                <p style="font-size: 210%; color:rgb(255, 255, 255);">The beauty and diversity of the natural world are captured in the compelling art form of nature photography. 
+            <div style="position: absolute; top: 340%; left: 50%; transform: translate(-30%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
+                <!-- <p style="font-size: 210%; color:rgb(255, 255, 255);">The beauty and diversity of the natural world are captured in the compelling art form of nature photography. 
                 It celebrates the fine details and expansive vistas that make nature breathtaking, encompassing landscapes, wildlife, plants, and other outdoor components. 
                 Patience, an acute sense of composition, and frequently a strong bond with the natural world are necessary for this genre.
-                Through images of tiny dewdrops on a flower petal or breathtaking mountain ranges, nature photography encourages viewers to take in the beauties of the planet and cultivates a feeling of environmental care.
-            </p>
-            <p style="position:absolute; top:-20%; left:-14%;font-size:30px;color:white"><i><b><u>Travel</u></b></i></p>
+                Through images of tiny dewdrops on a flower petal or breathtaking mountain ranges, nature photography encourages viewers to take in the beauties of the planet and cultivates a feeling of environmental care.</p>-->
+            <!-- <p style="position:absolute; top:-20%; left:-14%;font-size:30px;color:white"><i><b><u>Travel</u></b></i></p>
             <a href="#home"><p style="position:absolute; top:0%; left:-14%;font-size:30px;color:white"> Home</p></a>
             <a href="#nature"><p style="position:absolute; top:10%; left:-14%;font-size:30px;color:white"> Nature</p></a>
             <a href="#events"><p style="position:absolute; top:20%; left:-14%;font-size:30px;color:white">Events</p></a>
-            <a href="favourites.html"><p style="position:absolute; top:30%; left:-14%;font-size:30px;color:white">Favourites</p></a>
+            <a href="favourites.html"><p style="position:absolute; top:30%; left:-14%;font-size:30px;color:white">Favourites</p></a> -->
             <table border="0">
                 <tr>
-                    <td><img src="images/travel-photography-3644816756.jpg" width="500">
+                    <td><img src="images/travel-photography-3644816756.jpg" width="300" height="300">
                     <a href ="https://www2.shutterstock.com/blog/wp-content/uploads/sites/5/2016/09/travel-photography.jpg">
                         <p style = "color:white; font-size:20px;"> Taking a photo</p>
                     </a>
                     </td>
-                    <td><img src="images/sanctuary-of-truth-422054831.jpg" width="500">
+                    <td><img src="images/sanctuary-of-truth-422054831.jpg" width="300" height="300">
                     <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tlPKWHQx2PBIy6rL7z8xBgHaE8%26pid%3DApi&f=1&ipt=365147baead1bfac5c051de19158d295c6af76460a0f0045ab694d45f431f7e5&ipo=images">
                         <p style = "color:white; font-size:20px;">Riding an elephant</p></a>
                     </td>
-                    <td><img src ="images/travel-photography-tips-photojaanic-7-2137800997.jpg" width = 450>
+                    <td><img src ="images/travel-photography-tips-photojaanic-7-2137800997.jpg" width="300" height="300">
                     <a href="http://blog.photojaanic.com/wp-content/uploads/sites/2/2017/11/travel-photography-tips-photojaanic-7.jpg">
                         <p style = "color:white; font-size:20px;">Sailing along a river</p>
                     </a>
@@ -122,42 +137,38 @@
                 <p>&copy; Photo Gallery Website 2025. All rights reserved</p> |<a href="#home">Home</a> 
             </footer>
         </div>
-        
-
     </section>
+</div>
     <!-- Events section -->
     <section id ="events">
-        <img src="images/FzkJhS-769164813.jpg" width="100%">
+        <img src="images/background.jpg" width="100%">
         <div style="position: absolute; top: 400%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
             <h2 style="font-size:30px;">Capturing Moments, Creating Memories: Event Photography at Its Best</h2></div>
-            <div style="position: absolute; top: 450%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
-                <p style="font-size: 210%; color:rgb(253, 253, 253);">
+            <div style="position: absolute; top: 450%; left: 50%; transform: translate(-30%, -50%); color: white; background-color: rgba(0, 0, 0, 0); padding: 10px;width: 1400px;">
+                <!-- <p style="font-size: 210%; color:rgb(253, 253, 253);">
                     The goal of event photography is to document special moments from a variety of events, including concerts, weddings, parties, and business gatherings. 
                     By using staged pictures and candid photos, the aim is to capture the spirit of the occasion and preserve memories for the customers.
                     In order to maintain a balance between creative and journalistic styles, photographers in this sector need to be flexible and able to respond fast to shifting situations, lighting, and visitor interactions.
-                    Event photography is essential to preserving the unique moments of every event, whether it's capturing the formalities of a corporate gathering or the emotions of a celebration.
-
-
-            </p>
-            <p style ="position:absolute; top:-15%; left:-14%;font-size:30px;color:white"><u><b><i>Events</i></b></u></p>
+                    Event photography is essential to preserving the unique moments of every event, whether it's capturing the formalities of a corporate gathering or the emotions of a celebration. --></p>
+            <!-- <p style ="position:absolute; top:-15%; left:-14%;font-size:30px;color:white"><u><b><i>Events</i></b></u></p>
             <a href="#home"><p style="position:absolute; top:0%; left:-14%;font-size:30px;color:white"> Home</p></a>
             <a href="#nature"><p style="position:absolute; top:10%; left:-14%;font-size:30px;color:white"> Nature</p></a>
             <a href="#travel"><p style="position:absolute; top:20%; left:-14%;font-size:30px;color:white">Travel</p></a>
-            <a href="favourites.html"><p style="position:absolute; top:30%; left:-14%;font-size:30px;color:white">Favourites</p></a>
+            <a href="favourites.html"><p style="position:absolute; top:30%; left:-14%;font-size:30px;color:white">Favourites</p></a> -->
             <table border="0">
                 <tr>
-                    <td><img src="images/UA-Creative-Studios-FMMF-1-283722381.jpg" width="500">
+                    <td><img src="images/UA-Creative-Studios-FMMF-1-283722381.jpg" width="300" height="300">
                     <a href ="https://uacreativestudios.com/wp-content/uploads/2018/03/UA-Creative-Studios-FMMF-1.jpg">
                         <p style = "color:white; font-size:20px;"> People at a concert</p>
                     </a>
                     </td>
-                    <td><img src="images/Manhattan61518_bridalparty-3688190943.jpg" width="500">
+                    <td><img src="images/Manhattan61518_bridalparty-3688190943.jpg" width="300" height="300">
                         <a href ="https://completewedo.com/wp-content/uploads/2019/01/Manhattan61518_bridalparty.jpg">
                             <p style = "color:white; font-size:20px;"> People at a bridal party</p>
                         </a>
                     </td>
                         
-                    <td><img src="images/Corporate-Event-Photography-Venues-4-e1536811535950-1702831388.jpg" width="500">
+                    <td><img src="images/Corporate-Event-Photography-Venues-4-e1536811535950-1702831388.jpg" width="300" height="300">
                         <a href ="https://tavitsphotography.com/wp-content/uploads/2018/09/Corporate-Event-Photography-Venues-4-e1536811535950.jpg">
                             <p style = "color:white; font-size:20px;"> People at a coorporate event</p>
                         </a>
@@ -168,14 +179,11 @@
             </div>
             
             </div>
-
-
-
-
-
-
     </section>
-
-    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; Photo Gallery Website 2025. All rights reserved</p> |<a href="#home">Home</a> 
+    </footer>
+</div>
 </body>
 </html>
